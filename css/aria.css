@@ -4,17 +4,33 @@
  * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
  */
 
+
+
 body {
   padding-top: 100px;
-  background-color:#000000;
+  background-image: url('https://i.imgur.com/U9bnkQy.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: repeat;
+  background-color: rgb(20,26,30);
   color: #FFFFFF !important;
   font-family: 'raleway' !important;
   font-weight: 300;
+
 }
 
 nav.navbar {
   background-color: #000000 !important;
   color: #FFFFFF !important;
+}
+
+
+img {
+  display: block;
+  max-width: 85%;
+  height: auto;
 }
 
 .top70 {
@@ -28,6 +44,9 @@ nav.navbar {
 .jumbotron {
   background-color: #000000 !important;
 }
+
+.example-color::selection {
+  color: #B3914B;
 
 .nav-link {
   color: #FFFFFF !important;
