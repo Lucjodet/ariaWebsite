@@ -12,36 +12,25 @@
 
 
 
-
-
-
-
- .zoom a:hover{
-  transform: scale(1.1);
-  transition: all ease 500ms;
+.anim {
+  animation: jiggle 3s ease-in infinite;
 }
 
-
- @keyframes wiggle {
-  0% { transform: rotate(0deg); }
- 80% { transform: rotate(0deg); }
- 85% { transform: rotate(5deg); }
- 95% { transform: rotate(-5deg); }
-100% { transform: rotate(0deg); }
+@keyframes jiggle {
+  48%, 62% {
+    transform: scale(1.0, 1.0)
+  }
+  50% {
+    transform: scale(1.1, 0.9)
+  }
+  56% {
+    transform: scale(0.9, 1.1) translate(0, -5px)
+  }
+  59% {
+    transform: scale(1.0, 1.0) translate(0, -3px)
+  }
 }
 
-h1.wiggle {
-display: inline-block;
-animation: wiggle 2.5s infinite;
-}
-
-h1.wiggle:hover {
-animation: none;
-}
- @-webkit-keyframes greenPulse {
-  from { background-color: black; -webkit-box-shadow: 0 0 0 #333; }
-  to { background-color:#B79144; -webkit-box-shadow: 0 0 18px #B79144; }
-}
 
 a.button {
   background-color: black;
