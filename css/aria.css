@@ -5,10 +5,86 @@
  */
 
 
+/* Effects */
+
+
+/* Footer */
+
+
+
+
+
+
+
+ .zoom a:hover{
+  transform: scale(1.1);
+  transition: all ease 500ms;
+}
+
+
+ @keyframes wiggle {
+  0% { transform: rotate(0deg); }
+ 80% { transform: rotate(0deg); }
+ 85% { transform: rotate(5deg); }
+ 95% { transform: rotate(-5deg); }
+100% { transform: rotate(0deg); }
+}
+
+h1.wiggle {
+display: inline-block;
+animation: wiggle 2.5s infinite;
+}
+
+h1.wiggle:hover {
+animation: none;
+}
+ @-webkit-keyframes greenPulse {
+  from { background-color: black; -webkit-box-shadow: 0 0 0 #333; }
+  to { background-color:#B79144; -webkit-box-shadow: 0 0 18px #B79144; }
+}
+
+a.button {
+  background-color: black;
+  border-radius: 0.5em;
+  color: #fff;
+  padding: 0.5em;
+  text-decoration: none;
+}
+
+a.yellow.button:hover {
+  background-color: #B79144;
+  -webkit-animation-name: greenPulse;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-box-shadow: 0 0 18px #B79144;
+}
+
+
+
+a.button {
+  background-color black;
+  border-radius: 0.5em;
+  color: #fff;
+  padding: 0.5em;
+  text-decoration: none;
+}
+
+a.footer.button:hover {
+  background-color: #B79144;
+  -webkit-animation-name: greenPulse;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-box-shadow: 0 0 18px #B79144;
+}
+
+
+
+
+/*Main*/
 
 body {
   padding-top: 100px;
-  background-image: url('https://i.imgur.com/U9bnkQy.png');
+  background-image: url(images/abackground001.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -26,6 +102,10 @@ nav.navbar {
   color: #FFFFFF !important;
 }
 
+
+object{
+  pointer-events: none;
+}
 
 img {
   display: block;
@@ -61,6 +141,12 @@ a {
   font: 'raleway';
   font-size: 1em;
   background-color: #2F2F2F;
+}
+.footer {
+  color: #FFFFFF !important;
+  font: 'raleway';
+  font-size: 1em;
+  
 }
 
 .card-header {
