@@ -1,7 +1,7 @@
 Highcharts.chart('container1', {
   chart: {
     type: 'area',
-    backgroundColor: '#000000',
+    backgroundColor: 'transparent',
     style: {
       font: '16px "Raleway", Verdana, sans-serif'
    }
@@ -24,6 +24,18 @@ Highcharts.chart('container1', {
     '#302615',
     '#110D06'
 ],
+
+exporting: {
+  buttons: {
+      contextButton: {
+          symbolStroke: "white",
+          theme: {
+  fill:"transparent"
+          } 
+      }
+  }          
+},
+
   subtitle: {
     style: {
       color:'#FFFFFF'

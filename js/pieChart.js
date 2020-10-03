@@ -1,10 +1,10 @@
 // Build the chart
 Highcharts.chart('container2', {
   chart: {
-      plotBackgroundColor: '#000000',
+      plotBackgroundColor: 'transparent',
       plotBorderWidth: null,
       plotShadow: false,
-      backgroundColor: '#000000',
+      backgroundColor: 'transparent',
       type: 'pie',
       style: {
         font: '16px "Raleway", Verdana, sans-serif',
@@ -25,6 +25,17 @@ Highcharts.chart('container2', {
             }).add()
     }
   }
+},
+
+exporting: {
+    buttons: {
+        contextButton: {
+            symbolStroke: "",
+            theme: {
+    fill:"transparent"
+            } 
+        }
+    }          
 },
 
 credits: {
