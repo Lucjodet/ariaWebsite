@@ -21,15 +21,12 @@
 
 <body>
   
+
+
 <!-- Navigation -->
- <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top";>
-  <div class="container">
-    <a class="navbar-brand text-white" href="index.html">.aria</a>
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
+<!--
+<div class="collapse navbar-collapse" id="navbarResponsive">
+  <ul class="navbar-nav ml-auto">
         <li class="nav-item">
           <a class="nav-link" href="about.html">Tokenomics</a>
         </li>
@@ -39,17 +36,48 @@
         <li class="nav-item">
           <a class="nav-link" href="faq.html">FAQ</a>
         </li>
+-->
+
+ <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top";>
+  <div class="container">
+ 
+    <a class="navbar-brand text-white; yellow button " href="index.html">.aria</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="navbar-collapse collapse">
+      <ul class="navbar-nav ml-auto mb-0 d-flex align-items-center mynavright">
+        <li class="nav-item">
+          <a class="nav-link; yellow button" href="about.html">Tokenomics</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link; yellow button" href="protocol-activity.html">Protocol Activity</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link; yellow button" href="faq.html">FAQ</a>
+        </li>
+    
+        <!---
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Stuff
           </a>
+          
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
             <a class="dropdown-item" href="portfolio-1-col.html">1 Column stufff</a>
             <a class="dropdown-item" href="portfolio-2-col.html">2 Column stuff</a>
             <a class="dropdown-item" href="portfolio-3-col.html">3 Column stuff</a>
             <a class="dropdown-item" href="portfolio-4-col.html">4 Column stuff</a>
             <a class="dropdown-item" href="portfolio-item.html">Single stuff</a>
-          </div>
+          -->
+        <li>
+          <div class="container">
+          <a class="navbar-item" href="#">
+            <img src="images/getariabutton.png" class="nav-link" width="120" height="auto" >
+          </a>
+        </li>
         </li>
          <!--  <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -83,7 +111,7 @@
 
 <!-- Intro Content -->
 <div class="container">
-  <h1 style="font-family:Didot; padding-top:7%"  class= "display-3 mt-4 mb-3; example-color">The Arianee Protocol Currency</h1>
+  <h1 style="font-family:Didot; padding-top:7%"  class= "display-3 mt-4 mb-3; example-color">The <span style="color: #B79144">Arianee</span> Protocol Currency</h1>
   <div class="row col-lg-1 col-md-1 col-sm-1 col-xs-1 border"></div>
 <div class="row" style="padding-top:7%">
   
@@ -120,25 +148,68 @@
 
 <!-- Information Buttons-->
 
-<div class="row pl-5 pr-5 mx-5" align="center">
-  <div class="col-sm">
-    <a href="https://app.uniswap.org/#/swap?outputCurrency=0x1453Dbb8A29551ADe11D89825CA812e05317EAEB" target="_blank" rel="noopener noreferrer">
-      <img class="img-fluid" style="padding-top:7%;"   src="images/learnbutton180.png"  alt="Get Aria on UniSwap"></a>
+<div class="container ">
+
+  <div class="card-deck ">
+    <div class="card border-light bg-transparent">
+      <div class="card-body text-center">
+
+      
+
+
+
+        <a href="www.google.com" target="_blank">
+          <object data="images/learnbutton.svg" type="image/svg+xml" >
+            <img src="random.jpg" />
+          </object>
+        </a>
+
+    
+
+
+        
+      </div>
+    </div>
+    <div class="card border-light bg-transparent">
+      <div class="card-body text-center">
+        <object data="images/buildbutton.svg" type="image/svg+xml">
+          <img src="images/buildtest.svg" />
+        </object>
+      </div>
+    </div>
+    <div class="card border-warning bg-transparent">
+      <div class="card-body text-center">
+        <a href="www.google.com" target="_blank">
+          <object data="images/engagebutton02.svg" type="image/svg+xml" >
+            <img src="random.jpg" />
+          </object>
+        </a>
+        <p class="card-text"></p>
+      </div>
+    </div>
+    
+    </div>  
   </div>
-  <div class="col-sm">
+</div>
+
+
+
+<!--
+<div class="row pl-5 mx-5 d-flex justify-content-center">
+  <div class="col-sm-3">
     <a href="https://app.uniswap.org/#/swap?outputCurrency=0x1453Dbb8A29551ADe11D89825CA812e05317EAEB" target="_blank" rel="noopener noreferrer">
-      <img class="img-fluid" style="padding-top:7%"   src="images/buildbutton180.png"  alt="Get Aria on UniSwap"></a>
+      <img class="img-fluid" style="padding-top:7%;"   src="images/learnbutton150.png"  alt="Get Aria on UniSwap"></a>
   </div>
-  <div class="col-sm">
+  <div class="col-sm-3">
     <a href="https://app.uniswap.org/#/swap?outputCurrency=0x1453Dbb8A29551ADe11D89825CA812e05317EAEB" target="_blank" rel="noopener noreferrer">
-      <img class="img-fluid" style="padding-top:7%"   src="images/engagebutton180.png"  alt="Get Aria on UniSwap"></a>
+      <img class="img-fluid" style="padding-top:7%"   src="images/buildbutton150.png"  alt="Get Aria on UniSwap"></a>
   </div>
-  <!--
-  <div class="col-sm">
+  <div class="col-sm-3">
     <a href="https://app.uniswap.org/#/swap?outputCurrency=0x1453Dbb8A29551ADe11D89825CA812e05317EAEB" target="_blank" rel="noopener noreferrer">
-      <img class="img-fluid" style="padding-top:7%"   src="images/uniswapbutton180.png"  alt="Get Aria on UniSwap"></a>
+      <img class="img-fluid" style="padding-top:7%"   src="images/engagebutton150.png"  alt="Get Aria on UniSwap"></a>
   </div>
 -->
+
 </div>
 
 
@@ -146,14 +217,15 @@
 
 <!-- /.row -->  
 
-<!-- VIDEO -->
 
-<div class="embed-responsive embed-responsive-16by9 mt-4 mb-4" style="width:80%; padding-top:10%; display: block;
-margin: 0 auto;  ">
+<!-- VIDEO -->
+<!--
+<div class="embed-responsive embed-responsive-16by9 mt-4 mb-4 " style="width:80%; padding-top: 5em; display: block;
+margin: 0 auto  ">
 
   <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/RIAwYLBIGf8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture allowfullscreen"></iframe>
 </div> 
-
+-->
 <!-- TEXT -->
 <div class="container">
   <div class="row" style="padding-top:7%">
@@ -169,6 +241,10 @@ margin: 0 auto;  ">
 </div>
 
 <!-- NEWS -->
+
+
+
+<!--
 <div class="container">
   <div class="row top70">
     <h1 style="font-family:Didot"  class= "display-3 top40 mb-3; example-color">Latest News</h1>
@@ -245,6 +321,9 @@ margin: 0 auto;  ">
     </div>
   </div>
 </div>
+
+-->
+
 <!-- /.container -->
 <!-- /.NEWS -->
 
@@ -252,17 +331,108 @@ margin: 0 auto;  ">
 
 
 <!-- Footer -->
+<!-- Footer -->
+<footer class="page-footer font-small mdb-color amber accent-3 pt-4">
+
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!--Grid row-->
+    <div class="row d-flex justify-content-center">
+
+      <!--Grid column-->
+      <div class="col-md-6">
+
+        <!-- Video -->
+        <div class="embed-responsive embed-responsive-16by9 mb-4">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/RIAwYLBIGf8"
+            allowfullscreen></iframe>
+        </div>
+
+      </div>
+      <!--Grid column-->
+
+    </div>
+    <!--Grid row-->
+
+  </div>
+  <!-- Footer Elements -->
+  <footer class="page-footer font-small ">
+
+    <!-- Footer Links -->
+    <div class="container">
+  
+      <!-- Grid row-->
+      <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+  
+        <!-- Grid column -->
+        <div class="col-md-2 mb-3">
+          <h6 class="footer; ">
+            <a class="text-muted" href="#!">Technical Documentation</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-2 mb-3">
+          <h6 class="footer; ">
+            <a class="text-muted" href="#!">Telegram</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-2 mb-3">
+          <h6 class="footer; ">
+            <a class="text-muted" href="#!">Discord</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-2 mb-3">
+          <h6 class="footer; ">
+            <a class="text-muted" href="#!">Contact</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-2 mb-3">
+          <h6 class="footer; ">
+            <a class="text-muted" ref="#!">Get Aria</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row-->
+      <hr class="rgba-white-light" style="margin: 0 15%;">
+  
+      <!-- Grid row-->
+      <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+<!---
 <footer class="py-5 background-black">
   <div class="container">
     <p class="m-0 text-center text-white">Fear the aria</p>
+   
+
   </div>
-  <!-- /.container -->
+  
 </footer>
 
+-->
 <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 
 </html>
