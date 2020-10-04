@@ -21,62 +21,41 @@
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top";>
     <div class="container">
-      <a class="navbar-brand text-white" href="index.html">.aria</a>
+   
+      <a class="navbar-brand text-white yellow button " href="index.html">.aria</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
+  
+  
+      <div class="navbar-collapse collapse">
+        <ul class="navbar-nav ml-auto mb-0 d-flex align-items-center mynavright">
           <li class="nav-item">
-            <a class="nav-link" href="about.html">Tokenomics</a>
+            <a class="nav-link yellow button" href="about.html">Tokenomics</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="protocol-activity.html">Protocol Activity</a>
+            <a class="nav-link yellow button" href="protocol-activity.html">Protocol Activity</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="faq.html">FAQ</a>
+            <a class="nav-link yellow button" href="faq.html">FAQ</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Stuff
+      
+  
+          <li>
+            <div class="container">
+            <a class="navbar-item" href="https://app.uniswap.org/#/swap">
+              <img src="images/unibutton.png" class="nav-link anim" width="130" height="auto" >
             </a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-              <a class="dropdown-item" href="portfolio-1-col.html">1 Column stufff</a>
-              <a class="dropdown-item" href="portfolio-2-col.html">2 Column stuff</a>
-              <a class="dropdown-item" href="portfolio-3-col.html">3 Column stuff</a>
-              <a class="dropdown-item" href="portfolio-4-col.html">4 Column stuff</a>
-              <a class="dropdown-item" href="portfolio-item.html">Single stuff</a>
-            </div>
           </li>
-           <!--  <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Blog
-            </a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-              <a class="dropdown-item" href="blog-home-1.html">Blog Home 1</a>
-              <a class="dropdown-item" href="blog-home-2.html">Blog Home 2</a>
-              <a class="dropdown-item" href="blog-post.html">Blog Post</a>
-            </div>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Other Pages
-            </a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPages">
-              <a class="dropdown-item" href="full-width.html">Full Width Page</a>
-              <a class="dropdown-item" href="sidebar.html">Sidebar Page</a>
-              <a class="dropdown-item" href="faq.html">FAQ</a>
-              <a class="dropdown-item" href="404.html">404</a>
-              <a class="dropdown-item" href="pricing.html">Pricing Table</a>
-            </div>
-          </li> -->
+          
         </ul>
       </div>
     </div>
   </nav>
-
+  
   <!-- Page Content -->
   <div class="container">
       <h1 style="font-family:Didot; padding-top:7%"  class= "display-3 mt-4 mb-3 ">Protocol Activity</h1>
@@ -109,28 +88,28 @@
             <!-- Dashboard POA -->
             <div class="tab-content">  
                 <div role="tabpanel" class="tab-pane active" id="poa">
-            
+           
               <!-- Row 1 -->
                   <div class="row justify-content">
                     <div class="col-lg-4 mb-4">
-                      <div class="card h-100 border-top border-card">
-                        <h4 class="card-header text-center">CERTIFICATES</h4>
+                      <div class="card border-light bg-transparent">
+                        <h4 class="card-header text-center bg-transparent">CERTIFICATES</h4>
                         <div class="card-body">
                           <p class="card-text text-center display-3">14'000</p>
                         </div>
                       </div>
                     </div>
                 <div class="col-lg-4 mb-4">
-                  <div class="card h-100 border-top border-card">
-                    <h4 class="card-header text-center">MESSSAGES</h4>
+                  <div class="card border-light bg-transparent">
+                    <h4 class="card-header text-center bg-transparent">MESSSAGES</h4>
                     <div class="card-body">
                       <p class="card-text text-center display-3">3'000</p>
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-4 mb-4">
-                  <div class="card h-100 border-top border-card">
-                    <h4 class="card-header text-center">EVENTS</h4>
+                  <div class="card border-light bg-transparent">
+                    <h4 class="card-header text-center bg-transparent">EVENTS</h4>
                     <div class="card-body">
                       <p class="card-text text-center display-3">2'000</p>
                     </div>
@@ -141,7 +120,7 @@
               
               <div class="row">
                 <div class="col-lg-12 mb-12">
-                  <div class="card h-100 border-top border-card">
+                  <div class="card h-100 border-top border-card card border-light bg-transparent">
                       <div class="dropdown no-arrow text-right">
                         <a class="dropdown-toggle text-white" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           <i class="fas fa-ellipsis-v fa-sm fa-fw"></i>
@@ -153,14 +132,14 @@
                           <div class="dropdown-divider"></div>
                           <a class="dropdown-item" href="#">Say hi</a>
                         </div>
-                        <div class="card-header text-center">
-                        <p><h6 class="centered">STAKED IDENTITIES</h6></p>
+                        <div class="card-header text-center bg-transparent">
+                        <p><h6 class="centered bg-transparent">STAKED IDENTITIES</h6></p>
                         <p class="display-3 text-center">13</p>
                       </div>
                     </div>
 
                     <div class="card-body">
-                      <a class="card-text text-white" href="https://blockscout.com/poa/xdai/blocks/12102077/transactions">1: https://blockscout.com/poa/xdai/blocks/12102077/transactions </a>
+                      <a class="card-text text-white " href="https://blockscout.com/poa/xdai/blocks/12102077/transactions">1: https://blockscout.com/poa/xdai/blocks/12102077/transactions </a>
                       <br>
                       <a class="card-text text-white" href="https://blockscout.com/poa/xdai/blocks/12102077/transactions">2: https://blockscout.com/poa/xdai/blocks/12102077/transactions </a>
                       <br>
@@ -183,24 +162,24 @@
               <!-- Row 1 -->
               <div class="row">
                 <div class="col-lg-4 mb-4">
-                  <div class="card h-100">
-                    <h4 class="card-header text-center font-weight-bold">OTHER thing</h4>
+                  <div class="card h-100 bg-transparent border-light">
+                    <h4 class="card-header text-center font-weight-bold bg-transparent">OTHER thing</h4>
                     <div class="card-body">
                       <p class="card-text text-center display-3">30'000</p>
                     </div>
                   </div>
                 </div>
             <div class="col-lg-4 mb-4">
-              <div class="card h-100">
-                <h4 class="card-header text-center font-weight-bold">BIDULE</h4>
+              <div class="card h-100 bg-transparent border-light">
+                <h4 class="card-header text-center font-weight-bold bg-transparent">BIDULE</h4>
                 <div class="card-body">
                   <p class="card-text text-center display-3">40'000</p>
                 </div>
               </div>
             </div>
             <div class="col-lg-4 mb-4">
-              <div class="card h-100">
-                <h4 class="card-header text-center font-weight-bold">TRUC</h4>
+              <div class="card h-100 bg-transparent border-light">
+                <h4 class="card-header text-center font-weight-bold bg-transparent">TRUC</h4>
                 <div class="card-body">
                   <p class="card-text text-center display-3">20'000</p>
                 </div>
@@ -212,9 +191,9 @@
               <!-- Row 2 -->
                 <div class="row">
                   <div class="col-lg-12 mb-12">
-                    <div class="card h-100">
-                    <div class="card-header text-center d-flex flex-row justify-content-between">
-                        <h6 class="m-0 font-weight-bold">LIST OF STAKED IDENTITIES</h6>
+                    <div class="card h-100 bg-transparent border-light">
+                    <div class="card-header text-center d-flex flex-row justify-content-between bg-transparent">
+                        <h6 class="m-0 font-weight-bold bg-transparent">LIST OF STAKED IDENTITIES</h6>
                       <div class="dropdown no-arrow">
                         <a class="dropdown-toggle text-white" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
@@ -246,9 +225,129 @@
                 <!-- /.row 2 -->
               <!-- /.dashboard Ethereum -->
             </div>
-                <div role="tabpanel" class="tab-pane" id="bridge">Messages tab Content</div>
+                <div role="tabpanel" class="tab-pane" id="bridge">Messages tab Content
+
+                  <div class="row">
+                    <div class="col-lg-12 mb-12 text-center center-block bg-transparent border-light">
+                      <div class="card h-100 center-block text-center bg-transparent border-light">
+                      <div class="card-header text-center center-block d-flex flex-row justify-content-around bg-transparent border-light">
+                          <h6 class="card-header text-center font-weight-bold bg-transparent">LIST OF STAKED IDENTITIES</h6>
+                        
+                      </div>
+                        <div class="card-header center-block text-center d-flex flex-row justify-content-around bg-transparent border-light">
+                          <h6 class="card-header text-center font-weight-bold bg-transparent">From Here</h6>
+                          
+                          <img class="center-block" src="images/bridge1.svg"  width="500px" height="auto"  >
+                          <h6 class="card-header text-center font-weight-bold bg-transparent">To Here</h6>
+                      <svg class="fish" id="fish">
+ 
+                        <path
+                           sodipodi:nodetypes="cccccccccccccccccccccccccccccccc"
+                           inkscape:connector-curvature="0"
+                           style="fill: #B79144 ;fill-opacity:1"
+                          d="M121.44,152.89c0.58,4.07-2.25,7.84-6.32,8.42c-4.07,0.58-7.84-2.25-8.42-6.32c-0.58-4.07,2.25-7.84,6.32-8.42
+                        S120.86,148.82,121.44,152.89z M184.37,143.87l0.53,3.75c-2.84,1.68-5.26,2.98-7.25,3.9c-2,0.92-4.19,1.55-6.58,1.89
+                        c-3.85,0.55-7.11,0.06-9.77-1.48c-2.66-1.53-4.87-3.98-6.62-7.35c-1.92,3.68-4.33,6.73-7.22,9.16c-2.9,2.43-6.74,3.99-11.53,4.67
+                        c-3.96,0.56-7.42,0.52-10.38-0.12c-0.15-0.03-0.3-0.07-0.45-0.1c0.7-1.81,0.96-3.82,0.67-5.87c-0.91-6.42-6.86-10.88-13.28-9.97
+                        c-0.54,0.08-1.06,0.19-1.57,0.33c-0.07-0.36-0.13-0.72-0.18-1.09c-0.49-3.44-0.36-6.48,0.37-9.14c0.74-2.66,2-5.01,3.78-7.07
+                        c1.78-2.06,3.99-3.89,6.63-5.49c2.64-1.6,5.67-3.06,9.1-4.4c4.23-1.66,7.56-3.07,10-4.21c2.44-1.14,4.23-2.2,5.37-3.15
+                        c1.14-0.96,1.82-1.93,2.05-2.92c0.23-0.99,0.25-2.16,0.06-3.51c-0.53-3.75-2.32-6.76-5.35-9.04c-3.03-2.28-6.89-3.08-11.58-2.42
+                        c-1.77,0.25-3.56,0.75-5.37,1.48c-1.81,0.74-3.51,1.64-5.11,2.72c-1.6,1.08-3.03,2.21-4.3,3.4c-1.27,1.19-2.18,2.41-2.75,3.66
+                        l-1.09,0.16l-3.36-9.08c3.87-4.16,8.2-7.54,12.98-10.14c4.78-2.59,9.68-4.25,14.67-4.96c4.16-0.59,8.06-0.67,11.68-0.23
+                        c3.62,0.44,6.85,1.5,9.69,3.16c2.84,1.67,5.19,4.02,7.06,7.04c1.87,3.03,3.12,6.83,3.78,11.42c0.95,6.67,1.75,12.85,2.4,18.55
+                        c0.65,5.7,1.38,11.36,2.18,16.98c0.36,2.5,0.81,4.43,1.38,5.78c0.56,1.35,1.26,2.35,2.1,2.97c0.83,0.63,1.86,0.96,3.09,0.99
+                        C181.41,144.18,182.8,144.09,184.37,143.87z M150.06,113.36c-2.01,1.56-4.18,2.91-6.52,4.04c-2.34,1.13-4.43,2.44-6.29,3.92
+                        c-1.86,1.49-3.29,3.36-4.3,5.63c-1.01,2.27-1.23,5.38-0.66,9.34c0.55,3.85,1.77,6.68,3.68,8.48c1.9,1.8,4.21,2.51,6.92,2.12
+                        c3.44-0.49,6.04-2.19,7.8-5.09c1.76-2.91,2.28-6.91,1.56-12.02c-0.64-4.48-1.1-7.89-1.38-10.24
+                        C150.58,117.2,150.31,115.14,150.06,113.36z"
+                           id="fish3" />
+                        <path
+                           id="fish6"
+                           d="M179.12,73.05c-0.34,4.1-3.93,7.15-8.03,6.81c-4.1-0.34-7.15-3.93-6.81-8.03s3.93-7.15,8.03-6.81
+                        C176.41,65.36,179.46,68.95,179.12,73.05z M242.48,78.16l-0.31,3.77c-3.15,1.01-5.79,1.74-7.94,2.2c-2.15,0.46-4.43,0.59-6.84,0.39
+                        c-3.88-0.32-6.95-1.52-9.2-3.6c-2.26-2.08-3.87-4.96-4.84-8.63c-2.69,3.16-5.71,5.6-9.07,7.33c-3.36,1.73-7.45,2.4-12.28,2
+                        c-3.99-0.33-7.35-1.13-10.09-2.41c-0.14-0.07-0.28-0.13-0.41-0.2c1.08-1.61,1.78-3.51,1.95-5.58c0.53-6.46-4.28-12.13-10.74-12.66
+                        c-0.54-0.04-1.07-0.05-1.6-0.02c0.01-0.37,0.03-0.74,0.06-1.1c0.28-3.46,1.08-6.4,2.38-8.83c1.31-2.43,3.06-4.45,5.25-6.06
+                        c2.19-1.61,4.75-2.91,7.68-3.88c2.93-0.97,6.21-1.73,9.84-2.28c4.49-0.69,8.05-1.32,10.68-1.9c2.63-0.58,4.61-1.21,5.93-1.89
+                        c1.32-0.68,2.2-1.48,2.65-2.4c0.44-0.91,0.72-2.05,0.83-3.41c0.31-3.77-0.76-7.11-3.22-10c-2.45-2.89-6.04-4.53-10.76-4.92
+                        c-1.78-0.15-3.64-0.06-5.56,0.26c-1.93,0.32-3.79,0.83-5.59,1.52c-1.8,0.7-3.45,1.49-4.94,2.37c-1.5,0.88-2.66,1.87-3.49,2.96
+                        l-1.1-0.09l-1.27-9.6c4.69-3.2,9.66-5.54,14.9-7.01c5.24-1.47,10.38-2,15.41-1.59c4.19,0.34,8.01,1.13,11.44,2.36
+                        c3.43,1.23,6.35,2.97,8.75,5.23c2.4,2.25,4.18,5.07,5.33,8.43c1.15,3.37,1.54,7.36,1.16,11.97c-0.55,6.71-1.14,12.92-1.76,18.62
+                        c-0.63,5.7-1.17,11.38-1.63,17.04c-0.21,2.52-0.18,4.5,0.07,5.94c0.25,1.45,0.71,2.57,1.39,3.36c0.67,0.79,1.6,1.35,2.79,1.65
+                        C239.53,77.81,240.91,78.03,242.48,78.16z M215.77,40.83c-2.3,1.08-4.72,1.91-7.25,2.49c-2.53,0.58-4.86,1.4-7.01,2.43
+                        c-2.14,1.04-3.96,2.55-5.44,4.54c-1.48,1.99-2.39,4.98-2.71,8.96c-0.32,3.88,0.25,6.91,1.71,9.08c1.46,2.18,3.55,3.38,6.28,3.6
+                        c3.46,0.28,6.37-0.8,8.74-3.24c2.36-2.44,3.76-6.24,4.18-11.37c0.37-4.51,0.67-7.94,0.92-10.29
+                        C215.43,44.68,215.63,42.61,215.77,40.83z"
+                           style="fill:#B79144;fill-opacity:1"
+                           inkscape:connector-curvature="0"
+                           sodipodi:nodetypes="cccccccccccccccccccccccccccccccc" />
+                        <path
+                           sodipodi:nodetypes="cccccccccccccccccccccccccccccccc"
+                           inkscape:connector-curvature="0"
+                           style="fill:#B79144;fill-opacity:1"
+                          d="M286.36,128c0.3,4.1-2.79,7.66-6.89,7.96c-4.1,0.3-7.66-2.79-7.96-6.89s2.79-7.66,6.89-7.96
+                        C282.5,120.81,286.06,123.9,286.36,128z M349.76,123.34l0.27,3.78c-2.95,1.48-5.45,2.61-7.51,3.39c-2.05,0.78-4.29,1.26-6.7,1.43
+                        c-3.88,0.28-7.1-0.44-9.65-2.15c-2.55-1.71-4.58-4.31-6.1-7.79c-2.17,3.53-4.78,6.41-7.84,8.63c-3.06,2.22-7,3.51-11.82,3.86
+                        c-3.99,0.29-7.43,0.01-10.34-0.84c-0.15-0.04-0.29-0.09-0.44-0.13c0.82-1.76,1.22-3.74,1.07-5.81c-0.47-6.47-6.09-11.33-12.55-10.86
+                        c-0.54,0.04-1.07,0.11-1.58,0.22c-0.04-0.37-0.08-0.73-0.11-1.1c-0.25-3.46,0.08-6.49,1-9.09c0.92-2.6,2.34-4.86,4.26-6.79
+                        c1.92-1.93,4.25-3.6,6.99-5.01c2.75-1.41,5.87-2.66,9.38-3.76c4.33-1.37,7.75-2.54,10.27-3.51c2.51-0.97,4.37-1.9,5.57-2.78
+                        c1.2-0.88,1.95-1.8,2.25-2.77c0.3-0.97,0.4-2.14,0.3-3.5c-0.27-3.78-1.84-6.91-4.71-9.39c-2.87-2.48-6.66-3.55-11.39-3.21
+                        c-1.79,0.13-3.6,0.5-5.46,1.11c-1.85,0.61-3.62,1.4-5.29,2.36c-1.67,0.97-3.18,2-4.52,3.1c-1.34,1.1-2.34,2.25-2.99,3.46l-1.1,0.08
+                        l-2.73-9.3c4.15-3.88,8.7-6.96,13.65-9.21c4.95-2.26,9.95-3.57,14.98-3.93c4.2-0.3,8.09-0.11,11.67,0.58
+                        c3.58,0.69,6.73,1.97,9.45,3.83c2.72,1.86,4.9,4.37,6.55,7.52c1.65,3.15,2.64,7.03,2.98,11.65c0.48,6.72,0.85,12.94,1.11,18.67
+                        c0.26,5.73,0.59,11.43,1,17.09c0.18,2.52,0.51,4.47,0.98,5.86c0.47,1.39,1.1,2.43,1.89,3.11c0.79,0.68,1.79,1.08,3.01,1.21
+                        C346.78,123.45,348.18,123.46,349.76,123.34z M317.65,90.54c-2.11,1.42-4.37,2.61-6.78,3.57c-2.41,0.97-4.59,2.13-6.55,3.48
+                        c-1.96,1.36-3.52,3.13-4.68,5.32c-1.16,2.19-1.6,5.28-1.31,9.27c0.28,3.88,1.31,6.79,3.08,8.72c1.77,1.93,4.02,2.79,6.75,2.6
+                        c3.46-0.25,6.17-1.76,8.14-4.54c1.96-2.78,2.76-6.74,2.39-11.88c-0.33-4.51-0.55-7.95-0.67-10.31
+                        C317.9,94.4,317.78,92.33,317.65,90.54z"
+                           id="fish4" />
+                        <path
+                           id="fish5"
+                           d="M384.69,99.97c0,4.11-3.33,7.44-7.44,7.44c-4.11,0-7.44-3.33-7.44-7.44s3.33-7.44,7.44-7.44
+                        C381.36,92.53,384.69,95.86,384.69,99.97z M448.26,99.9v3.79c-3.05,1.26-5.63,2.21-7.73,2.84c-2.11,0.63-4.37,0.95-6.78,0.95
+                        c-3.89,0-7.05-0.95-9.47-2.84c-2.42-1.89-4.26-4.63-5.52-8.2c-2.42,3.37-5.23,6.05-8.44,8.05c-3.21,2-7.23,3-12.07,3
+                        c-4,0-7.42-0.53-10.26-1.58c-0.14-0.05-0.29-0.11-0.43-0.16c0.95-1.69,1.49-3.64,1.49-5.72c0-6.48-5.26-11.74-11.74-11.74
+                        c-0.54,0-1.07,0.04-1.6,0.11c-0.02-0.37-0.03-0.74-0.03-1.1c0-3.47,0.55-6.47,1.66-8.99c1.1-2.52,2.68-4.68,4.73-6.47
+                        c2.05-1.79,4.5-3.29,7.34-4.5c2.84-1.21,6.05-2.23,9.63-3.08c4.42-1.05,7.91-1.97,10.49-2.76c2.58-0.79,4.5-1.58,5.76-2.37
+                        c1.26-0.79,2.08-1.66,2.45-2.6c0.37-0.95,0.55-2.1,0.55-3.47c0-3.79-1.34-7.02-4.02-9.7c-2.68-2.68-6.39-4.02-11.12-4.02
+                        c-1.79,0-3.63,0.24-5.52,0.71c-1.89,0.47-3.71,1.13-5.44,1.97c-1.74,0.84-3.31,1.76-4.73,2.76c-1.42,1-2.5,2.08-3.23,3.23h-1.1
+                        l-2.05-9.47c4.42-3.57,9.18-6.31,14.28-8.21c5.1-1.89,10.18-2.84,15.23-2.84c4.21,0,8.07,0.47,11.6,1.42
+                        c3.52,0.95,6.57,2.45,9.15,4.5c2.58,2.05,4.58,4.71,6,7.97c1.42,3.26,2.13,7.21,2.13,11.83c0,6.73-0.08,12.97-0.24,18.7
+                        c-0.16,5.73-0.24,11.44-0.24,17.12c0,2.52,0.18,4.5,0.55,5.92c0.37,1.42,0.92,2.5,1.66,3.23c0.73,0.74,1.71,1.21,2.92,1.42
+                        C445.28,99.8,446.68,99.9,448.26,99.9z M418.59,64.87c-2.21,1.26-4.55,2.29-7.02,3.08c-2.47,0.79-4.73,1.79-6.78,3
+                        c-2.05,1.21-3.74,2.87-5.05,4.97c-1.32,2.11-1.97,5.16-1.97,9.15c0,3.89,0.81,6.86,2.45,8.92c1.63,2.05,3.81,3.08,6.55,3.08
+                        c3.47,0,6.28-1.31,8.44-3.94c2.15-2.63,3.23-6.52,3.23-11.68c0-4.52,0.02-7.97,0.08-10.34C418.57,68.74,418.59,66.66,418.59,64.87z"
+                           style="fill:#B79144;fill-opacity:1"
+                           inkscape:connector-curvature="0"
+                           sodipodi:nodetypes="cccccccccccccccccccccccccccccccc" />
+                        <path
+                            d="M30.09,94.83c0,4.11-3.33,7.44-7.44,7.44s-7.44-3.33-7.44-7.44s3.33-7.44,7.44-7.44S30.09,90.72,30.09,94.83z
+                         M93.66,94.75v3.79c-3.05,1.26-5.63,2.21-7.73,2.84c-2.11,0.63-4.37,0.95-6.78,0.95c-3.89,0-7.05-0.95-9.47-2.84
+                        c-2.42-1.89-4.26-4.63-5.52-8.2c-2.42,3.37-5.23,6.05-8.44,8.05c-3.21,2-7.23,3-12.07,3c-4,0-7.42-0.53-10.26-1.58
+                        c-0.14-0.05-0.29-0.11-0.43-0.16c0.95-1.69,1.49-3.64,1.49-5.72c0-6.48-5.26-11.74-11.74-11.74c-0.54,0-1.07,0.04-1.6,0.11
+                        c-0.02-0.37-0.03-0.74-0.03-1.1c0-3.47,0.55-6.47,1.66-8.99c1.1-2.52,2.68-4.68,4.73-6.47c2.05-1.79,4.5-3.29,7.34-4.5
+                        c2.84-1.21,6.05-2.23,9.63-3.08c4.42-1.05,7.91-1.97,10.49-2.76c2.58-0.79,4.5-1.58,5.76-2.37c1.26-0.79,2.08-1.66,2.45-2.6
+                        c0.37-0.95,0.55-2.1,0.55-3.47c0-3.79-1.34-7.02-4.02-9.7c-2.68-2.68-6.39-4.02-11.12-4.02c-1.79,0-3.63,0.24-5.52,0.71
+                        c-1.89,0.47-3.71,1.13-5.44,1.97c-1.74,0.84-3.31,1.76-4.73,2.76c-1.42,1-2.5,2.08-3.23,3.23h-1.1l-2.05-9.47
+                        c4.42-3.57,9.18-6.31,14.28-8.21c5.1-1.89,10.18-2.84,15.23-2.84c4.21,0,8.07,0.47,11.6,1.42c3.52,0.95,6.57,2.45,9.15,4.5
+                        c2.58,2.05,4.58,4.71,6,7.97c1.42,3.26,2.13,7.21,2.13,11.83c0,6.73-0.08,12.97-0.24,18.7c-0.16,5.73-0.24,11.44-0.24,17.12
+                        c0,2.52,0.18,4.5,0.55,5.92c0.37,1.42,0.92,2.5,1.66,3.23c0.73,0.74,1.71,1.21,2.92,1.42C90.68,94.65,92.08,94.75,93.66,94.75z
+                         M63.99,59.73c-2.21,1.26-4.55,2.29-7.02,3.08c-2.47,0.79-4.73,1.79-6.78,3c-2.05,1.21-3.74,2.87-5.05,4.97
+                        c-1.32,2.11-1.97,5.16-1.97,9.15c0,3.89,0.81,6.86,2.45,8.92c1.63,2.05,3.81,3.08,6.55,3.08c3.47,0,6.28-1.31,8.44-3.94
+                        c2.15-2.63,3.23-6.52,3.23-11.68c0-4.52,0.02-7.97,0.08-10.34C63.96,63.59,63.99,61.52,63.99,59.73z"
+                           id="fish1" />
+                      </svg>
+                      </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                
             </div>
-            <!-- /.dashboard POA -->
+            <!-- /.dashboard Bridge -->
+            
         </div>
           
       </div>
