@@ -101,6 +101,7 @@ img {
 
 .example-color::selection {
   color: #B3914B;
+}
 
 .nav-link {
   color: #FFFFFF !important;
@@ -154,6 +155,10 @@ a {
   border-width: 1px;
   border-top-color: #5e5e5e !important;
   border-left-color: #5e5e5e !important;
+}
+
+.list-group-item {
+    background-color: transparent !important;
 }
 
 /*! STACKED CHART */
