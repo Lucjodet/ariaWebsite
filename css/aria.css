@@ -127,11 +127,11 @@ a {
 }
 
 .card-header {
-  color: #FFFFFF !important; 
   font: 'raleway';
   font-size: 1em;
-  background-color: #2F2F2F;
+  background-color: rgb(255,255,255,0.1) !important;
 }
+
 
 .carousel-item {
   height: 65vh;
