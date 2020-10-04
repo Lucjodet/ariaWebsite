@@ -38,7 +38,6 @@ a.button {
   color: #fff;
   padding: 0.5em;
   text-decoration: none;
-  transition: all 0.5s ease-in-out;
 }
 
 a.yellow.button:hover {
@@ -50,6 +49,22 @@ a.yellow.button:hover {
 }
 
 
+
+a.button {
+  background-color : black;
+  border-radius: 0.5em;
+  color: #fff;
+  padding: 0.5em;
+  text-decoration: none;
+}
+
+a.footer.button:hover {
+  background-color: #B79144;
+  -webkit-animation-name: greenPulse;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-box-shadow: 0 0 18px #B79144;
+}
 
 
 
@@ -101,6 +116,7 @@ img {
 
 .example-color::selection {
   color: #B3914B;
+}
 
 .nav-link {
   color: #FFFFFF !important;
@@ -155,6 +171,13 @@ a {
   border-top-color: #5e5e5e !important;
   border-left-color: #5e5e5e !important;
 }
+
+
+.list-group-item {
+  background-color: transparent !important;
+}
+
+
 
 /*! STACKED CHART */
 #containerSChart {
