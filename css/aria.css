@@ -6,55 +6,6 @@
  */
 
 
-/* Effects */
-
-
-/* Footer */
-
-
-
-.anim {
-  animation: jiggle 3s ease-in infinite;
-}
-
-@keyframes jiggle {
-  48%, 62% {
-    transform: scale(1.0, 1.0)
-  }
-  50% {
-    transform: scale(1.1, 0.9)
-  }
-  56% {
-    transform: scale(0.9, 1.1) translate(0, -5px)
-  }
-  59% {
-    transform: scale(1.0, 1.0) translate(0, -3px)
-  }
-}
-
-
-a.yellow.button {
-  background-color: black;
- 
-  border-radius: 0.5em;
-  
-  padding: 0.5em;
-  text-decoration: none;
-  transition: all 0.5s ease-in-out;
-}
-
-a.yellow.button:hover {
-  background-color: #B79144;
-  -webkit-animation-name: greenPulse;
-  -webkit-animation-duration: 2s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-box-shadow: 0 0 18px #B79144;
-}
-
-
-
-
-
 
 /*Main*/
 
@@ -163,6 +114,9 @@ a {
     background-color: transparent !important;
 }
 
+
+/* HighCharts + JS Visuals */
+
 /*! STACKED CHART */
 #containerSChart {
   height: 400px; 
@@ -201,6 +155,7 @@ a {
   background: #FFFFFF;
 }
 
+
 /*! PIE CHART */
 .highcharts-figure, .highcharts-data-table table {
   min-width: 320px; 
@@ -236,13 +191,59 @@ font-weight: 600;
   background: #f1f7ff;
 }
 
+
+
+/* CSS Animations */
+
+
+/* Jiggle Button Animation */
+
+.anim {
+  animation: jiggle 3s ease-in infinite;
+}
+
+@keyframes jiggle {
+  48%, 62% {
+    transform: scale(1.0, 1.0)
+  }
+  50% {
+    transform: scale(1.1, 0.9)
+  }
+  56% {
+    transform: scale(0.9, 1.1) translate(0, -5px)
+  }
+  59% {
+    transform: scale(1.0, 1.0) translate(0, -3px)
+  }
+}
+
+
+a.yellow.button {
+  background-color: black;
+ 
+  border-radius: 0.5em;
+  
+  padding: 0.5em;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
+a.yellow.button:hover {
+  background-color: #B79144;
+  -webkit-animation-name: greenPulse;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-box-shadow: 0 0 18px #B79144;
+}
+
+
+
+
+
 /* Fish Animation */
 svg#fish {
   top: 5em;
 }
-/* Fish Animation */
-
-
 
 svg.fish{
   overflow:visible;
@@ -313,7 +314,7 @@ svg #fish6{
 	-webkit-animation-delay: 0.3s;
 }
 
-/**/
+/* */
 @-moz-keyframes bounce {
   0%, 50%, 100% {
     -moz-transform: translateY(0);
@@ -364,3 +365,4 @@ svg #fish6{
 }
 
 /*END Fish Animation*/
+
