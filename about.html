@@ -26,60 +26,41 @@
 
 <body>
 
-  <!-- Navigation -->
+ <!-- Navigation -->
+
+
  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top";>
   <div class="container">
-    <a class="navbar-brand text-white" href="index.html">.aria</a>
+    <a class="navbar-brand" href="index.html">
+      <img src="images/aria.svg" class="nav-link" width="130" height="auto" >
+    </a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
+
+    <div class="navbar-collapse collapse">
+      <ul class="navbar-nav ml-auto mb-0 d-flex align-items-center mynavright">
         <li class="nav-item">
-          <a class="nav-link" href="about.html">Tokenomics</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="protocol-activity.html">Protocol Activity</a>
+          <a class="nav-link yellow button" href="about.html">Tokenomics</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="faq.html">FAQ</a>
+          <a class="nav-link yellow button" href="protocol-activity.html">Protocol Activity</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Stuff
+        <li class="nav-item">
+          <a class="nav-link yellow button" href="faq.html">FAQ</a>
+        </li>
+
+        <li>
+          <div class="container">
+          <a class="navbar-item" href="https://app.uniswap.org/#/swap?outputCurrency=0xeDF6568618A00C6F0908Bf7758A16F76B6E04aF9" target="_blank" rel="noopener noreferrer">
+            <img src="images/unibutton.png" class="nav-link anim" width="150" height="auto" >
           </a>
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-            <a class="dropdown-item" href="portfolio-1-col.html">1 Column stufff</a>
-            <a class="dropdown-item" href="portfolio-2-col.html">2 Column stuff</a>
-            <a class="dropdown-item" href="portfolio-3-col.html">3 Column stuff</a>
-            <a class="dropdown-item" href="portfolio-4-col.html">4 Column stuff</a>
-            <a class="dropdown-item" href="portfolio-item.html">Single stuff</a>
           </div>
         </li>
-         <!--  <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Blog
-          </a>
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-            <a class="dropdown-item" href="blog-home-1.html">Blog Home 1</a>
-            <a class="dropdown-item" href="blog-home-2.html">Blog Home 2</a>
-            <a class="dropdown-item" href="blog-post.html">Blog Post</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Other Pages
-          </a>
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPages">
-            <a class="dropdown-item" href="full-width.html">Full Width Page</a>
-            <a class="dropdown-item" href="sidebar.html">Sidebar Page</a>
-            <a class="dropdown-item" href="faq.html">FAQ</a>
-            <a class="dropdown-item" href="404.html">404</a>
-            <a class="dropdown-item" href="pricing.html">Pricing Table</a>
-          </div>
-        </li> -->
+        
       </ul>
     </div>
+
   </div>
 </nav>
 
@@ -112,10 +93,16 @@
             Ethereum is the most popular blockchain for Decentralized Finance (DeFi). 
             DeFi is essential in our architecture because it enables the complete decentralization of the Arianee Protocol. 
             This is why the Aria token was deployed on Ethereum as an ERC20. Thanks to this, the ARIA can be traded on decentralized exchanges such as Uniswap, Balancer, Sushiswap and many others under the ticker ARIA20. 
-            <div class="card border-light bg-transparent rounded-0">
+            <div class="card border-light bg-transparent rounded-0 col-lg-11 mx-auto">
               <div class="card-body text-center">
-            <p class="text-center">The ARIA20 Ethereum address is <a href="https://etherscan.io/address/0xedf6568618a00c6f0908bf7758a16f76b6e04af9" target="_blank" rel="noopener noreferrer">aria.eth</a>
-            <br>0xeDF6568618A00C6F0908Bf7758A16F76B6E04aF9</p>
+            
+                
+
+            <p class="text-center">
+            <a href="https://app.ens.domains/name/aria.eth" target="_blank" rel="noopener noreferrer">aria.eth</a>
+            <br>ARIA20 Ethereum contract address:
+            <br><a href="https://etherscan.io/address/0xedf6568618a00c6f0908bf7758a16f76b6e04af9" target="_blank" rel="noopener noreferrer">0xeDF6568618A00C6F0908Bf7758A16F76B6E04aF9</a>
+            </p>
               </div>
             </div>
       </div>  
@@ -125,10 +112,11 @@
               POA is a fully-compatible Ethereum sidechain. It is a great solution to deploy smart contracts like the Arianee Protocol, which require low transaction costs and fast execution.
               ARIAs are necessary to access protocol features and for a certifier to claim its identity. Each aria spent in the protocol is then automatically redistributed between different stakholders according to an incentive manager: <a href="https://blockscout.com/poa/core/address/0xE8966ce72c94e6CeC883633Ff3877af0755b344f" target="_blank" rel="noopener noreferrer"> the Aria Store</a>.
             </p>
-            <div class="card border-light bg-transparent rounded-0">
+            <div class="card border-light bg-transparent rounded-0 col-lg-11 mx-auto">
               <div class="card-body text-center">
-                <p class="text-center">For a detailed description of the Arianee Protocol and its incentive mechanisms, please refer to the <a href="https://docs.arianee.org/docs/" target="_blank" rel="noopener noreferrer">technical documentation</a>.
-                <br>
+                <p class="text-center">
+                  <a href="protocol-activity.html" target="_blank" rel="noopener noreferrer">Protocol Activity Dashboard</a>
+                <br>Complete documentation of the Arianee Protocol and its incentive mechanisms: <a href="https://docs.arianee.org/docs/" target="_blank" rel="noopener noreferrer">technical documentation</a>.
             </div>
             </div>
       </div>
@@ -138,7 +126,7 @@
         <div class="col-lg-8 mx-auto mt-4">
           <h2 class='text-center'>The Bridge</h2>
             <p class='text-center'>In order to transfer ARIAs from one chain to another, we built a bridge that locks ARIA20 on Ethereum Mainnet and mints ARIA on POA and vice versa.</p>
-            <div class="card border-light bg-transparent rounded-0">
+            <div class="card border-light bg-transparent rounded-0 col-lg-11 mx-auto">
               <div class="card-body text-center"> 
                 <p class="text-center">The bridge can be accessed <a href="https://bridge.arianee.org/" target="_blank" rel="noopener noreferrer">here</a>.</p>
               </div>
