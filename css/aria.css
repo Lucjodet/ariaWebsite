@@ -366,3 +366,9 @@ svg #fish6{
 
 /*END Fish Animation*/
 
+.link {
+  color: #B79144;
+   font-weight: bolder;
+   text-decoration-line: underline; 
+
+}
