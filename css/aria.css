@@ -6,6 +6,20 @@
  */
 
 
+ @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,700;1,100;1,300;1,700&display=swap');
+
+ .wf-loading * {
+ 
+  /*
+  first things first, we need to hide everything,
+  but bear in mind that this will only take effect
+  once the loading script has taken effect.
+  here we're hiding all content within
+  the <html> once it has the class "wf-loading"
+  */
+  opacity: 0;
+}
+
 
 /*Main*/
 
@@ -19,9 +33,8 @@ body {
   background-repeat: repeat;
   background-color: rgb(20,26,30);
   color: #FFFFFF !important;
-  font-family: 'raleway' !important;
+  font-family: 'raleway';
   font-weight: 300;
-
 }
 
 nav.navbar {
@@ -73,14 +86,17 @@ a {
 .footer {
   color: #FFFFFF !important;
   font: 'raleway';
-  font-size: 1em;
-  
+  font-size: 1em; 
 }
 
-.card-header {
+.card-body {
   font: 'raleway';
   font-size: 1em;
   background-color: rgb(255,255,255,0.1) !important;
+}
+
+.subtitle {
+  color: #757575 !important;
 }
 
 
@@ -235,10 +251,6 @@ a.yellow.button:hover {
   -webkit-animation-iteration-count: 1;
   -webkit-box-shadow: 0 0 18px #B79144;
 }
-
-
-
-
 
 /* Fish Animation */
 svg#fish {

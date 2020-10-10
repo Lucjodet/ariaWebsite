@@ -10,21 +10,6 @@ Highcharts.chart('container2', {
         font: '16px "Raleway", Verdana, sans-serif',
         textColor: '#FFFFFF'
      },
-      events: {
-        load: function(event) {
-            var total = 0; // get total of data
-            for (var i = 0, len = this.series[0].yData.length; i < len; i++) {
-                total += this.series[0].yData[i];
-            }
-            var text = this.renderer.text(
-                'Total: ' + total + 'M',
-                this.plotLeft,
-                this.plotTop - 20
-            ).attr({
-                zIndex: 5
-            }).add()
-    }
-  }
 },
 
 exporting: {
@@ -42,8 +27,8 @@ credits: {
     enabled: false
 },
 
-  title: {
-    text: 'Aria Distribution',
+title: {
+    text: '',
     style: {
       color:'#FFFFFF',
       font: 'bold 16px "Raleway", Verdana, sans-serif'
@@ -107,10 +92,10 @@ subtitle: {
           name: 'Advisor',
           y: 6
       }, {
-          name: 'Community incentives',
+          name: 'Community Incentives',
           y: 10
       }, {
-          name: 'Liquid reserve',
+          name: 'Operational Reserve',
           y: 10
       }, {
           name: 'Long-term Reserve',
