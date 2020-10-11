@@ -15,53 +15,50 @@
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,700;1,100;1,300;1,700&display=swap');
+  </style>
   <link href="css/aria.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,700;1,100;1,300;1,700&display=swap">
 
 </head>
 
 <body>
 
  <!-- Navigation -->
-
-
- <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top";>
-  <div class="container">
-    <a class="navbar-brand" href="index.html">
-      <img src="images/aria.svg" class="nav-link" width="130" height="auto" >
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <ul class="navbar-nav ml-auto mb-0 d-flex align-items-center mynavright">
-        <li class="nav-item">
-          <a class="nav-link yellow button" href="about.html">Tokenomics</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link yellow button" href="dashboard.html">Dashboard</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link yellow button" href="faq.html">FAQ</a>
-        </li>
-
-        <li>
-          <div class="container">
-          <a class="navbar-item" href="https://app.uniswap.org/#/swap?outputCurrency=0xeDF6568618A00C6F0908Bf7758A16F76B6E04aF9" target="_blank" rel="noopener noreferrer">
-            <img src="images/unibutton.png" class="nav-link anim" width="150" height="auto" >
-          </a>
-          </div>
-        </li>
-        
-      </ul>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top";>
+    <div class="container mt-3">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/aria.svg" class="nav-link" width="120" height="auto" >
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav ml-auto mb-0 d-flex align-items-center mynavright">
+          <li class="nav-item">
+            <a class="nav-link yellow button" href="about.html">Tokenomics</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link yellow button" href="dashboard.html">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link yellow button" href="faq.html">FAQ</a>
+          </li>
+          <li>
+            <div class="container">
+            <a class="navbar-item" href="https://app.uniswap.org/#/swap?outputCurrency=0xeDF6568618A00C6F0908Bf7758A16F76B6E04aF9" target="_blank" rel="noopener noreferrer">
+              <img src="images/unibutton.png" class="nav-link anim" width="150" height="auto" >
+            </a>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
-
-  </div>
-</nav>
+  </nav>
   
   <!-- Page Content -->
   <div class="container">
-      <h1 style="font-family:Didot; padding-top:7%"  class= "display-3 mt-4 mb-3 ">Protocol Activity</h1>
+      <h1 style="font-family:Didot; padding-top:7%"  class= "display-3 mt-4 mb-3 ">Dashboard</h1>
       <div class="row col-lg-1 col-md-1 col-sm-1 col-xs-1 border"></div>
 
           <!-- MARKET DATA -->
@@ -71,32 +68,32 @@
               <div class="row justify-content">
                 <div class="col-lg-3 mb-4">
                   <div class="card bg-transparent">
-                    <div class="card-body">
-                      <h2 class="card-text text-center">$0.50</h2>
+                    <div class="card-body cbd">
+                      <h2 class="card-text text-center">$-</h2>
                       <h6 class="card-text text-center subtitle">ARIA PRICE</h6>
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-3 mb-4">
                   <div class="card bg-transparent">
-                    <div class="card-body">
-                      <h2 class="card-text text-center">$250,000</h2>
+                    <div class="card-body cbd">
+                      <h2 class="card-text text-center">$-</h2>
                       <h6 class="card-text text-center subtitle">30d VOLUME</h6>
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-3 mb-4">
                   <div class="card bg-transparent">
-                    <div class="card-body">
-                      <h2 class="card-text text-center">$100,000</h2>
+                    <div class="card-body cbd">
+                      <h2 class="card-text text-center">$-</h2>
                       <h6 class="card-text text-center subtitle">LIQUIDITY</h6>
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-3 mb-4">
                   <div class="card bg-transparent">
-                    <div class="card-body">
-                      <h2 class="card-text text-center">$17,500,000</h2>
+                    <div class="card-body cbd">
+                      <h2 class="card-text text-center">$-</h2>
                       <h6 class="card-text text-center subtitle">LIQUID MARKETCAP</h6>
                     </div>
                   </div>
@@ -108,27 +105,35 @@
           <h2 class= "mt-12 mb-3 text-center" style="padding-top:7%">PROTOCOL ACTIVITY</h2>
               <!-- Row 1 -->
                 <div class="row justify-content">
-                  <div class="col-lg-4 mb-4">
+                  <div class="col-lg-3 col-md-6 mb-4">
                     <div class="card bg-transparent">
-                      <div class="card-body">
+                      <div class="card-body cbd">
                         <h2 class="card-text text-center">14,000</h2>
                         <h6 class="card-text text-center subtitle">CERTIFICATES</h6>
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-4 mb-4">
+                  <div class="col-lg-3 col-md-6 mb-4">
                     <div class="card bg-transparent">
-                      <div class="card-body">
+                      <div class="card-body cbd">
                         <h2 class="card-text text-center">3,000</h2>
                         <h6 class="card-text text-center subtitle">MESSSAGES</h6>
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-4 mb-4">
+                  <div class="col-lg-3 col-md-6 mb-4">
                     <div class="card bg-transparent">
-                      <div class="card-body">
+                      <div class="card-body cbd">
                         <h2 class="card-text text-center">2,000</h2>
                         <h6 class="card-text text-center subtitle">EVENTS</h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card bg-transparent">
+                      <div class="card-body cbd">
+                        <h2 class="card-text text-center">500,000</h2>
+                        <h6 class="card-text text-center subtitle">ARIA STAKED</h6>
                       </div>
                     </div>
                   </div>
@@ -143,7 +148,7 @@
                       <h2 class="card-text text-center">13</h2>
                       <h6 class="card-text text-center subtitle">STAKED IDENTITIES</h6>
                     </div>
-                    <div class="card-body overflow-auto">
+                    <div class="card-body cbd overflow-auto">
                       <ul class="list-group list-group-flush text-center overflow-auto">
                         <li class="list-group-item h6">Identity 1 
                         <br>
@@ -177,25 +182,25 @@
               <div class="row justify-content">
                 <div class="col-lg-4 mb-4">
                   <div class="card bg-transparent">
-                    <div class="card-body">
-                      <h2 class="card-text text-center">199,849,849æ</h2>
+                    <div class="card-body cbd">
+                      <h2 class="card-text text-center">199,849,849</h2>
                       <h6 class="card-text text-center subtitle">ARIA20 ON ETHEREUM</h6>
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-4 mb-4">
                   <div class="card bg-transparent">
-                    <div class="card-body">
-                      <h2 class="card-text text-center">150,151æ</h2>
+                    <div class="card-body cbd">
+                      <h2 class="card-text text-center">150,151</h2>
                       <h6 class="card-text text-center subtitle">ARIA ON POA</h6>
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-4 mb-4">
                   <div class="card bg-transparent">
-                    <div class="card-body">
-                      <h2 class="card-text text-center">2,000æ</h2>
-                      <h6 class="card-text text-center subtitle">30d BRIDGE VOLUME</h6>
+                    <div class="card-body cbd">
+                      <h2 class="card-text text-center">2,000</h2>
+                      <h6 class="card-text text-center subtitle">30d BRIDGE VOLUME (ARIA)</h6>
                     </div>
                   </div>
                 </div>
@@ -207,21 +212,19 @@
 
   <!-- Footer -->
 
-  <!--Footer Links-->
-
   <!-- Footer Elements -->
-  <footer class="page-footer font-small">
+  <footer class="page-footer font-small ">
 
     <!-- Footer Links -->
     <div class="container">
   
       <!-- Grid row-->
-      <div class="row text-center d-flex justify-content-center mt-5 pt-5 ">
+      <div class="row text-center d-flex justify-content-center pt-5 mb-3">
   
         <!-- Grid column -->
-        <div class="col-md-2">
+        <div class="col-md-2 mb-3">
           <h6 class="footer; ">
-            <a class="text-muted" href="#!">Tech Docs</a>
+            <a class="text-muted" href="https://docs.arianee.org/docs/introduction" style="text-decoration: none;" target="_blank">Tech Docs</a>
           </h6>
         </div>
         <!-- Grid column -->
@@ -229,7 +232,7 @@
         <!-- Grid column -->
         <div class="col-md-2 mb-3">
           <h6 class="footer; ">
-            <a class="text-muted" href="#!">Telegram</a>
+            <a class="text-muted" href="https://t.me/arianeeproject" style="text-decoration: none;" target="_blank">Telegram</a>
           </h6>
         </div>
         <!-- Grid column -->
@@ -237,7 +240,7 @@
         <!-- Grid column -->
         <div class="col-md-2 mb-3">
           <h6 class="footer; ">
-            <a class="text-muted" href="#!">Discord</a>
+            <a class="text-muted" href="https://discord.gg/FaE9mg9" style="text-decoration: none;" target="_blank">Discord</a>
           </h6>
         </div>
         <!-- Grid column -->
@@ -245,7 +248,7 @@
         <!-- Grid column -->
         <div class="col-md-2 mb-3">
           <h6 class="footer; ">
-            <a class="text-muted" href="#!">Contact</a>
+            <a class="text-muted" href="mailto:hello@aria.fyi" style="text-decoration: none;" target="_blank">Contact</a>
           </h6>
         </div>
         <!-- Grid column -->
@@ -253,13 +256,17 @@
         <!-- Grid column -->
         <div class="col-md-2 mb-3">
           <h6 class="footer; ">
-            <a class="text-muted" ref="#!">Get Aria</a>
+            <a class="text-muted" href="https://app.uniswap.org/#/swap?outputCurrency=0xeDF6568618A00C6F0908Bf7758A16F76B6E04aF9" target="_blank" rel="noopener noreferrer">Get Aria</a>
           </h6>
         </div>
         <!-- Grid column -->
   
       </div>
-     
+      <!-- Grid row-->
+      <hr class="rgba-white-light" style="margin: 0 15%;">
+  
+      <!-- Grid row-->
+      <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
 
   <!-- Copyright -->
 
