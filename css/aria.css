@@ -95,6 +95,12 @@ a {
   background-color: rgb(255,255,255,0.1) !important;
 }
 
+.card-header {
+  font: 'raleway';
+  font-size: 1em;
+  background-color: rgb(255,255,255,0.1) !important;
+}
+
 .subtitle {
   color: #757575 !important;
 }
