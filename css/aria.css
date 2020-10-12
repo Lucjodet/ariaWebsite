@@ -200,3 +200,10 @@ a.yellow.button:hover {
   -webkit-animation-iteration-count: 1;
   -webkit-box-shadow: 0 0 18px #B79144;
 }
+
+
+/* Sign up Modal */
+
+.ariamodal {
+  background-color: black;
+}
