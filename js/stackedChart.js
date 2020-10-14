@@ -21,8 +21,8 @@ Highcharts.chart('container1', {
     '#FFD784',
     '#B3914B',
     '#675021',
-    '#4B72B3',
-    '#163567'
+    '#A0A0A0',
+    '#565656'
 ],
 
 exporting: {
