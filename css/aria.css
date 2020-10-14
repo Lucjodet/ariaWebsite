@@ -207,3 +207,10 @@ a.yellow.button:hover {
 .ariamodal {
   background-color: black;
 }
+
+
+/* Hover Borders */
+
+.demo:hover {
+ border-color: white;
+}
