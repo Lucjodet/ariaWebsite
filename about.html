@@ -1,8 +1,11 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -10,9 +13,11 @@
 
   <title>Aria Website</title>
   <link href="favicon-132.png" rel="icon" type="image/x-icon"/>
-
+    
   <!-- Load Google Font -->
-  <link href='https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,700;1,100;1,300;1,700&display=swap' rel='stylesheet' type='text/css'>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,700;1,100;1,300;1,700&display=swap');
+  </style>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -27,6 +32,11 @@
   <script src="https://code.highcharts.com/modules/exporting.js"></script>
   <script src="https://code.highcharts.com/modules/export-data.js"></script>
   <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
 
 </head>
 
@@ -48,12 +58,15 @@
           <a class="nav-link yellow button" href="about.html">Tokenomics</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link yellow button" href="dashboard.html">Dashboard</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link yellow button" href="faq.html">FAQ</a>
         </li>
         <li>
           <div class="container">
-          <a class="navbar-item" href="https://app.uniswap.org/#/swap?outputCurrency=0xeDF6568618A00C6F0908Bf7758A16F76B6E04aF9" target="_blank" rel="noopener noreferrer">
-            <img src="images/unibutton.png" class="nav-link anim" width="150" height="auto" >
+          <a class="navbar-item" target="_blank" rel="noopener noreferrer">
+            <img src="images/unibutton.png" class="nav-link anim" width="150" height="auto"  id="Myimg1" >
           </a>
           </div>
         </li>
@@ -62,6 +75,37 @@
   </div>
 </nav>
 
+ <!--Modal-->
+ <script>
+  $(document).ready(function(){
+    $('#Myimg1').click(function(){
+        $('#Mymodal1').modal('show')
+    });
+  });
+  </script>
+
+
+<div class="modal fade" id="Mymodal1"  >
+
+<div class="modal-dialog ariamodal" role="document">
+  <div class="modal-content ariamodal">
+    <div class="modal-header text-center">
+      <h4 class="modal-title w-100 font-weight-bold">Aria launches on Nov 15th 2020!</h4>
+      <button id="rock" type="button" class="close" data-dismiss="modal" aria-label="Close">
+      
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    
+    <div class="container" style="padding-top: 10%;">
+      <div class="text-center">
+        But in the meantime join our  <a href=" https://discord.gg/FaE9mg9" target="_blank"> Discord!</a>
+      </div>
+    </div>
+  
+  </div>
+</div>
+</div>  
 
   <!-- Page Content -->
     <!-- Intro Content -->
@@ -108,8 +152,8 @@
             <div class="card border-light bg-transparent rounded-0 col-lg-11 mx-auto">
               <div class="card-body text-center">
                 <p class="text-center">
-                  <a href="https://docs.arianee.org" target="_blank" rel="noopener noreferrer">Technical Documentation</a>
-                <br>Read the technical documentation for more details, or go to <a href="https://www.arianee.org" target="_blank" rel="noopener noreferrer">arianee.org</a> for more details on the Arianee Project.
+                  <a href="protocol-activity.html" target="_blank" rel="noopener noreferrer">Dashboard</a>
+                <br>Complete documentation of the Arianee Protocol and its incentive mechanisms: <a href="https://docs.arianee.org" target="_blank" rel="noopener noreferrer">technical documentation</a>.
             </div>
             </div>
       </div>
@@ -162,13 +206,12 @@
     <div class="card-body text-center"> 
           <ul class="list-group list-group-flush">
             <li class="list-group-item h2">Each pool is isolated on its own multisig:</li>
-            <li class="list-group-item">Token Private sale: <a href="https://etherscan.io/address/0x59E77e69A1F6E894034E89a457004c8b85347C98" target="_blank" rel="noopener noreferrer">0x59E77e69A1F6E894034E89a457004c8b85347C98</a></li>
-            <li class="list-group-item">Token Public sale: <a href="https://etherscan.io/address/0x003F5b94cE3da7Ad32443A98d21b2e315ED3dA2E" target="_blank" rel="noopener noreferrer">0x003F5b94cE3da7Ad32443A98d21b2e315ED3dA2E</a></li>
-            <li class="list-group-item">Team: <a href="https://etherscan.io/address/0xD21b583C8F4abf24c67074208cf219FE29C070eb" target="_blank" rel="noopener noreferrer">0xD21b583C8F4abf24c67074208cf219FE29C070eb</a></li>
-            <li class="list-group-item">Advisor: <a href="https://etherscan.io/address/0x4de5f5B978560b600d7E6B46ACEF514F9F7Bd6bf" target="_blank" rel="noopener noreferrer">0x4de5f5B978560b600d7E6B46ACEF514F9F7Bd6bf</a></li>
-            <li class="list-group-item">Operational Reserve: <a href="https://etherscan.io/address/0xB24b851BF0B83E6507ddc7d3460e55fab51aAbA4" target="_blank" rel="noopener noreferrer">0xB24b851BF0B83E6507ddc7d3460e55fab51aAbA4</a></li>
-            <li class="list-group-item">Community Incentives: <a href="https://etherscan.io/address/0x49163100DDDA5DB9403658ce9027A193222b6c92" target="_blank" rel="noopener noreferrer">0x49163100DDDA5DB9403658ce9027A193222b6c92</a></li>
-            <li class="list-group-item">Longterm Reserve: <a href="https://etherscan.io/address/0x847fe89eD463760B80a3C140Dc4359ab25b4D806" target="_blank" rel="noopener noreferrer">0x847fe89eD463760B80a3C140Dc4359ab25b4D806</a></li>
+            <li class="list-group-item">Token Private sale: <a href="https://etherscan.io/address/0xaaa51883Da05394210aA67ac5F916ebbddBcD6E0" target="_blank" rel="noopener noreferrer">0xaaa51883Da05394210aA67ac5F916ebbddBcD6E0</a></li>
+            <li class="list-group-item">Token Public sale: <a href="https://etherscan.io/address/0xaaa51883Da05394210aA67ac5F916ebbddBcD6E0" target="_blank" rel="noopener noreferrer">0xaaa51883Da05394210aA67ac5F916ebbddBcD6E0</a></li>
+            <li class="list-group-item">Team: <a href="https://etherscan.io/address/0xaaa51883Da05394210aA67ac5F916ebbddBcD6E0" target="_blank" rel="noopener noreferrer">0xaaa51883Da05394210aA67ac5F916ebbddBcD6E0</a></li>
+            <li class="list-group-item">Advisor: <a href="https://etherscan.io/address/0xaaa51883Da05394210aA67ac5F916ebbddBcD6E0" target="_blank" rel="noopener noreferrer">0xaaa51883Da05394210aA67ac5F916ebbddBcD6E0</a></li>
+            <li class="list-group-item">Operational Reserve: <a href="https://etherscan.io/address/0xaaa51883Da05394210aA67ac5F916ebbddBcD6E0" target="_blank" rel="noopener noreferrer">0xaaa51883Da05394210aA67ac5F916ebbddBcD6E0</a></li>
+            <li class="list-group-item">Longterm Reserve: <a href="https://etherscan.io/address/0xaaa51883Da05394210aA67ac5F916ebbddBcD6E0" target="_blank" rel="noopener noreferrer">0xaaa51883Da05394210aA67ac5F916ebbddBcD6E0</a></li>
           </ul>
       </div>
     </div>
@@ -235,7 +278,7 @@
         <!-- Grid column -->
         <div class="col-md-2 mb-3">
           <h6 class="footer; ">
-            <a class="text-muted" href="https://discord.gg/tTER79v" style="text-decoration: none;" target="_blank">Discord</a>
+            <a class="text-muted" href="https://discord.gg/FaE9mg9" style="text-decoration: none;" target="_blank">Discord</a>
           </h6>
         </div>
         <!-- Grid column -->
@@ -274,3 +317,4 @@
 </body>
 
 </html>
+-->

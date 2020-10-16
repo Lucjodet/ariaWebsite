@@ -16,6 +16,12 @@
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+
   <!-- Custom styles for this template -->
   <link href="css/aria.css" rel="stylesheet">
 
@@ -38,12 +44,15 @@
             <a class="nav-link yellow button" href="about.html">Tokenomics</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link yellow button" href="dashboard.html">Dashboard</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link yellow button" href="faq.html">FAQ</a>
           </li>
           <li>
             <div class="container">
-            <a class="navbar-item" href="https://app.uniswap.org/#/swap?outputCurrency=0xeDF6568618A00C6F0908Bf7758A16F76B6E04aF9" target="_blank" rel="noopener noreferrer">
-              <img src="images/unibutton.png" class="nav-link anim" width="150" height="auto" >
+            <a class="navbar-item" target="_blank" rel="noopener noreferrer">
+              <img src="images/unibutton.png" class="nav-link anim" width="150" height="auto"  id="Myimg1" >
             </a>
             </div>
           </li>
@@ -52,6 +61,37 @@
     </div>
   </nav>
 
+  <!--Modal-->
+ <script>
+  $(document).ready(function(){
+    $('#Myimg1').click(function(){
+        $('#Mymodal1').modal('show')
+    });
+  });
+  </script>
+
+
+<div class="modal fade" id="Mymodal1"  >
+
+<div class="modal-dialog ariamodal" role="document">
+  <div class="modal-content ariamodal">
+    <div class="modal-header text-center">
+      <h4 class="modal-title w-100 font-weight-bold">Aria launches on Nov 15th 2020!</h4>
+      <button id="rock" type="button" class="close" data-dismiss="modal" aria-label="Close">
+      
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    
+    <div class="container" style="padding-top: 10%;">
+      <div class="text-center">
+        But in the meantime join our  <a href=" https://discord.gg/FaE9mg9" target="_blank"> Discord!</a>
+      </div>
+    </div>
+  
+  </div>
+</div>
+</div>  
   <!-- Page Content -->
   <div class="container">
 
@@ -69,7 +109,7 @@
 
         <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
           <div class="card-body">
-            Aria will be available for trading on <a href="https://app.uniswap.org/#/swap?outputCurrency=0xeDF6568618A00C6F0908Bf7758A16F76B6E04aF9" target="_blank" rel="noopener noreferrer"> uniswap </a> starting November 15th.
+            Aria is available for purchase on uniswap.
           </div>
         </div>
       </div>
@@ -90,12 +130,12 @@
       <div class="demo card bg-transparent mb-4 d-flex">
         <div class="card-header" role="tab" id="headingThree">
           <h5 class="mb-0">
-            <a class="collapsed text-white font-weight-bold" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">What is the relationship with the Arianee Project?</a>
+            <a class="collapsed text-white font-weight-bold" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Collapsible Group Item #3</a>
           </h5>
         </div>
         <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
           <div class="card-body">
-            Aria is one of the core elements of the technical architecture of the Arianee protocol. It is a utility otken that ensures that all economics incentives are dealt with on-chain. This means that anybody can use the Arianee Protocol without ever having to deal with the Arianee Project non-profit. In other words, it participates to the decentralisaiton of the protcol.
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
           </div>
         </div>
       </div>
@@ -132,7 +172,7 @@
         <!-- Grid column -->
         <div class="col-md-2 mb-3">
           <h6 class="footer; ">
-            <a class="text-muted" href="https://discord.gg/tTER79v" style="text-decoration: none;" target="_blank">Discord</a>
+            <a class="text-muted" href="https://discord.gg/FaE9mg9" style="text-decoration: none;" target="_blank">Discord</a>
           </h6>
         </div>
         <!-- Grid column -->
