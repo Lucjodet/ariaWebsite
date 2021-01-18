@@ -21,7 +21,7 @@
 
   <title>The token of the arianee protocol - aria20</title>
   <link href="favicon-132.png" rel="icon" type="image/x-icon"/>
-    
+
    <!-- Load Google Font -->
    <link href='https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,700;1,100;1,300;1,700&display=swap' rel='stylesheet' type='text/css'>
 
@@ -29,7 +29,7 @@
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  
+
   <link href="css/aria.css" rel="stylesheet">
 
 
@@ -83,26 +83,26 @@
     <div class="container">
       <h1 style="font-family:Didot; padding-top:7%"  class= "display-3 mt-4 mb-3">Aria is a multichain token</h1>
       <div class="row col-lg-1 col-md-1 col-sm-1 col-xs-1 border"></div>
-      
+
       <div class="row mb-3" style="padding-top:7%">
         <div class="col-lg-12">
-          <p>The Arianee protocol is built both on Ethereum mainnet and a side-chain of Ethereum called <a href="https://www.poa.network/" target="_blank" rel="noopener noreferrer">POAnetwork</a>. 
+          <p>The Arianee protocol is built both on Ethereum mainnet and a side-chain of Ethereum called <a href="https://www.poa.network/" target="_blank" rel="noopener noreferrer">POAnetwork</a>.
             Building on both Mainnet and POA enables us to scale the protocol while still benefiting from Ethereum's Decentralized Finance infrastructure. In order to transfer tokens from one chain to the other, we built:<a href="https://bridge.arianee.org/" target="_blank" rel="noopener noreferrer"> the aria bridge</a>
           </p>
           <P>The flow chart below is a schematic representation of the tokenomics of the arianee protocol. To find out the current protocol rates and percentages, please refer to the <a href="https://docs.arianee.org/docs/" target="_blank" rel="noopener noreferrer">technical documentation</a>.
           </P>
         </div>
       </div>
-      
+
       <img class="img-fluid rounded mb-4 col-lg-10 mx-auto" src="images/Tokenomics Graph 3.svg" alt="">
 
     <div class="row mt-4 mb-3">
       <div class="col-lg-6">
           <h2 class='text-center'>On Ethereum </h2>
           <p class='text-center'>
-            Ethereum is the most popular blockchain for Decentralized Finance (DeFi). 
-            DeFi is essential in our architecture because it enables the complete decentralization of the Arianee Protocol. 
-            This is why the Aria token was deployed on Ethereum as an ERC20. Thanks to this, the ARIA can be traded on decentralized exchanges such as Uniswap, Balancer, Sushiswap and many others under the ticker ARIA20. 
+            Ethereum is the most popular blockchain for Decentralized Finance (DeFi).
+            DeFi is essential in our architecture because it enables the complete decentralization of the Arianee Protocol.
+            This is why the Aria token was deployed on Ethereum as an ERC20. Thanks to this, the ARIA can be traded on decentralized exchanges such as Uniswap, Balancer, Sushiswap and many others under the ticker ARIA20.
             <div class="card border-light bg-transparent rounded-0 col-lg-11 mx-auto">
               <div class="card-body text-center">
             <p class="text-center">
@@ -112,8 +112,8 @@
             </p>
               </div>
             </div>
-      </div>  
-      
+      </div>
+
       <div class="col-lg-6">
           <h2 class='text-center'>On POA</h2>
             <p class='text-center'>
@@ -135,13 +135,13 @@
           <h2 class='text-center'>The Bridge</h2>
             <p class='text-center'>In order to transfer ARIAs from one chain to another, we built a bridge that locks ARIA20 on Ethereum Mainnet and mints ARIA on POA and vice versa.</p>
             <div class="card border-light bg-transparent rounded-0 col-lg-10 mx-auto">
-              <div class="card-body text-center"> 
+              <div class="card-body text-center">
                 <p class="text-center">The bridge can be accessed <a href="https://bridge.arianee.org/" target="_blank" rel="noopener noreferrer">here</a>.</p>
               </div>
             </div>
         </div>
-      </div> 
-    </div>   
+      </div>
+    </div>
 
 <!-- Token distribution -->
 <div class="container">
@@ -161,10 +161,10 @@
       <p><b class="font-weight-bold">70 million aria</b> are kept in a long-term reserve.</p>
     </div>
 
-  <div class="container col-lg-7" style="margin:0;padding:0;">   
+  <div class="container col-lg-7" style="margin:0;padding:0;">
     <figure class="highcharts-figure">
       <div id="container2"></div>
-      <p class="highcharts-description">  
+      <p class="highcharts-description">
       </p>
     </figure>
     <script src="js/pieChart.js"></script>
@@ -174,7 +174,7 @@
 <!-- row 2 -->
 <div class="row">
   <div class="card border-light bg-transparent rounded-0 col-lg-8 mt-4 mx-auto">
-    <div class="card-body text-center"> 
+    <div class="card-body text-center">
           <ul class="list-group list-group-flush">
             <li class="list-group-item h2">Each pool is isolated on its own multisig:</li>
             <li class="list-group-item">Token Private sale: <a href="https://etherscan.io/address/0x59E77e69A1F6E894034E89a457004c8b85347C98" target="_blank" rel="noopener noreferrer">0x59E77e69A1F6E894034E89a457004c8b85347C98</a></li>
@@ -197,14 +197,14 @@
 
 <div class="row mb-3" style="padding-top:7%">
   <div class="col-lg-12">
-    <p>The token release schedule is differentated based on who they are allocated to. Listing day circulating supply will be 35'000'000 aria. The lock-up schedules can be found below.</a>
+    <p>The token release schedule is differentated based on who they are allocated to. Listing day circulating supply will be <span id="circulatingSupply"></span> aria. The lock-up schedules can be found below.</a>
     </p>
   </div>
 </div>
 <!-- STACKED CHART -->
 
 <div class="row d-flex align-items-center">
-  <div class="container col-lg-7">        
+  <div class="container col-lg-7">
     <figure class="highcharts-figure">
       <div id="container1"></div>
          <p class="highcharts-description">
@@ -212,7 +212,7 @@
     </figure>
     <script src="js/stackedChart.js"></script>
   </div>
-  <div class="container col-lg-5 mt-4"> 
+  <div class="container col-lg-5 mt-4">
       <p><b class="font-weight-bold">Public Sale tokens and the Operational Reserve</b> are liquid upon listing on November 15th 2020.</p>
       <p><b class="font-weight-bold">Team and Private sales token</b> are released on a 5 year schedule (starting January 1st 2021) with an annual cliff of 25%.</p>
       <p><b class="font-weight-bold">Advisor tokens</b> are released on a 2 year schedule (starting January 1st 2021) with an annual cliff of 50%.</p>
@@ -227,10 +227,10 @@
 
     <!-- Footer Links -->
     <div class="container">
-  
+
       <!-- Grid row-->
       <div class="row text-center d-flex justify-content-center pt-5 mb-3">
-  
+
         <!-- Grid column -->
         <div class="col-md-2 mb-3">
           <h6 class="footer; ">
@@ -238,7 +238,7 @@
           </h6>
         </div>
         <!-- Grid column -->
-  
+
         <!-- Grid column -->
         <div class="col-md-2 mb-3">
           <h6 class="footer; ">
@@ -246,7 +246,7 @@
           </h6>
         </div>
         <!-- Grid column -->
-  
+
         <!-- Grid column -->
         <div class="col-md-2 mb-3">
           <h6 class="footer; ">
@@ -254,7 +254,7 @@
           </h6>
         </div>
         <!-- Grid column -->
-  
+
         <!-- Grid column -->
         <div class="col-md-2 mb-3">
           <h6 class="footer; ">
@@ -262,7 +262,7 @@
           </h6>
         </div>
         <!-- Grid column -->
-  
+
         <!-- Grid column -->
         <div class="col-md-2 mb-3">
           <h6 class="footer; ">
@@ -270,11 +270,11 @@
           </h6>
         </div>
         <!-- Grid column -->
-  
+
       </div>
       <!-- Grid row-->
       <hr class="rgba-white-light" style="margin: 0 15%;">
-  
+
       <!-- Grid row-->
       <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
 
@@ -285,7 +285,7 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+ <script src="js/updateCirculatingSupply.js"></script>
 </body>
 
 </html>
