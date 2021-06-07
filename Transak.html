@@ -28,13 +28,13 @@
   <!-- Custom styles for this template -->
   <link href="css/aria.css" rel="stylesheet">
 
+  <script src="https://global.transak.com/sdk/v1.1/widget.js" async></script>
+
 </head>
 
 <body>
 
  <!-- Navigation -->
-
-
  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top";>
   <div class="container mt-3">
     <a class="navbar-brand" href="index.html">
@@ -53,7 +53,7 @@
         </li>
         <li>
           <div class="container">
-          <a class="navbar-item" href="https://app.uniswap.org/#/swap?outputCurrency=0xeDF6568618A00C6F0908Bf7758A16F76B6E04aF9&use=V2" target="_blank" rel="noopener noreferrer">
+          <a class="navbar-item" href="https://app.uniswap.org/#/swap?outputCurrency=0xeDF6568618A00C6F0908Bf7758A16F76B6E04aF9" target="_blank" rel="noopener noreferrer">
             <img src="images/unibutton.png" class="nav-link anim" width="150" height="auto" >
           </a>
           </div>
@@ -66,8 +66,37 @@
   <!-- Page Content -->
   <div class="container">
     <div class="container">
-      <h1 style="font-family:Didot; padding-top:7%"  class= "display-3 mt-4 mb-3">404</h1>
-      <div class="row col-lg-1 col-md-1 col-sm-1 col-xs-1 border"></div> 
+      <script>
+          function launchTransak() {
+      let transak = new TransakSDK.default({
+        apiKey: 'a5a7110d-b8b4-4d08-8c81-02e8a06d9df4', // Your API Key
+        environment: 'STAGING', // STAGING/PRODUCTION
+        defaultCryptoCurrency: 'ETH',
+        walletAddress: '', // Your customer wallet address
+        themeColor: '000000', // App theme color in hex
+        fiatCurrency: '', // INR/GBP
+        email: '', // Your customer email address
+        redirectURL: '',
+        hostURL: window.location.origin,
+        widgetHeight: '550px',
+        widgetWidth: '100%'
+      });
+      transak.init();
+      // To get all the events
+      transak
+        .on(transak.ALL_EVENTS, (data) => {
+          console.log(data)
+        });
+      // This will trigger when the user marks payment is made.
+      transak.on(transak.EVENTS.TRANSAK_ORDER_SUCCESSFUL, (orderData) => {
+        console.log(orderData);
+        //transak.close();
+      });
+    }
+    window.onload = function() {
+      launchTransak()
+    }
+      </script> 
   </div>
   <!-- /.container -->
 
@@ -115,7 +144,7 @@
         <!-- Grid column -->
         <div class="col-md-2 mb-3">
           <h6 class="footer; ">
-            <a class="text-muted" href="https://app.uniswap.org/#/swap?outputCurrency=0xeDF6568618A00C6F0908Bf7758A16F76B6E04aF9&use=V2" target="_blank" rel="noopener noreferrer">Get Aria</a>
+            <a class="text-muted" href="https://app.uniswap.org/#/swap?outputCurrency=0xeDF6568618A00C6F0908Bf7758A16F76B6E04aF9" target="_blank" rel="noopener noreferrer">Get Aria</a>
           </h6>
         </div>
         <!-- Grid column -->
